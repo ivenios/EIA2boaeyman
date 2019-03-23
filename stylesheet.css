@@ -1,129 +1,83 @@
+body {
+    background-color: rgba(128, 128, 128, 0.726);
+    font-family: Arial, Helvetica, sans-serif;
+} 
+header {
+    position: fixed;
 
-        html, body {
-    margin: 0px;
-    padding: 0px;
 }
-
-.carousel {
-    position: relative;
-    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
-    margin-top: 26px;
-}
-
-.carousel-inner {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
-.carousel-open:checked + .carousel-item {
-    position: static;
-    opacity: 100;
-}
-
-.carousel-item {
-    position: absolute;
-    opacity: 0;
-    -webkit-transition: opacity 0.6s ease-out;
-    transition: opacity 0.6s ease-out;
-}
-
-.carousel-item img {
-    display: block;
-    height: auto;
-    max-width: 100%;
-}
-
-.carousel-control {
-    background: rgba(0, 0, 0, 0.28);
-    border-radius: 50%;
-    color: #fff;
-    cursor: pointer;
-    display: none;
-    font-size: 40px;
-    height: 40px;
-    line-height: 35px;
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translate(0, -50%);
-    cursor: pointer;
-    -ms-transform: translate(0, -50%);
-    transform: translate(0, -50%);
-    text-align: center;
-    width: 40px;
-    z-index: 10;
-}
-
-.carousel-control.prev {
-    left: 2%;
-}
-
-.carousel-control.next {
-    right: 2%;
-}
-
-.carousel-control:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #aaaaaa;
-}
-/*Wichtig für die Klick Funktion, die Rechts und Links oder oben und unten am Bildrand angebracht werden können. Jenachdem welches Bild angezeigt wird, wird das jeweilige Bild gewechselt und die Click Funktion übergeben.  */
-#carousel-1:checked ~ .control-1,
-#carousel-2:checked ~ .control-2,
-#carousel-3:checked ~ .control-3,
-#carousel-4:checked ~ .control-4,
-#carousel-5:checked ~ .control-5,
-#carousel-6:checked ~ .control-6 {
-    display: block;
-}
-
-.carousel-indicators {
-    list-style: none;
+		
+		
+body {
     margin: 0;
     padding: 0;
-    position: absolute;
-    bottom: 2%;
-    left: 0;
+    overflow: hidden;
+    height: 100%; 
+    max-height: 100%; 
+    font-family:Sans-serif;
+    line-height: 1.5em;
+}
+
+main {
+    position: fixed;
+    left: 230px; /* Width of the nav bar */
+    bottom: 100px; /* Set this to the height of the footer */
     right: 0;
-    text-align: center;
-    z-index: 10;
+    top: 0;
+    bottom: 0;
+    overflow: auto; 
+    background: #fff;
 }
 
-.carousel-indicators li {
-    display: inline-block;
-    margin: 0 5px;
+#nav {
+    position: absolute; 
+    left: 0;
+    top: 0;
+    bottom: 0; 
+    width: 230px;
+    overflow: auto; /* Scrollbars will appear on this frame only when there's enough content to require scrolling. To disable scrollbars, change to "hidden", or use "scroll" to enable permanent scrollbars */
+    background: #DAE9BC; 		
 }
 
-.carousel-bullet {
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    font-size: 35px;
-}
-
-.carousel-bullet:hover {
-    color: #aaaaaa;
-}
-
-/* Wechselt den Indikator und die Farbe des Indikators für die Position im Karusell  */
-#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
-#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
-#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
-#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet,
-#carousel-5:checked ~ .control-5 ~ .carousel-indicators li:nth-child(5) .carousel-bullet,
-#carousel-6:checked ~ .control-6 ~ .carousel-indicators li:nth-child(6) .carousel-bullet {
-    color: #428bca;
-}
-
-#title {
-    width: 100%;
+#footer {
     position: absolute;
-    padding: 0px;
-    margin: 0px auto;
-    text-align: center;
-    font-size: 27px;
-    color: rgba(255, 255, 255, 1);
-    font-family: 'Open Sans', sans-serif;
-    z-index: 9999;
-    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), -1px 0px 2px rgba(255, 255, 255, 0);
+    left: 230px;
+    bottom: 0;
+    width: 100%;
+    height: 100px; 
+    overflow: hidden; /* Disables scrollbars on the footer frame. To enable scrollbars, change "hidden" to "scroll" */
+    background: #BCCE98;
 }
-   
+
+#logo {
+    padding:10px;
+}
+                
+.innertube {
+    margin: 15px; /* Provides padding for the content */
+}
+
+p {
+    color: #555;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    color: darkgreen;
+    text-decoration: none;
+}
+        
+/*IE6 fix*/
+* html body{
+    padding: 0 0 100px 230px; /* Set the third value to the height of the footer and last value to the width of the nav */
+}
+
+* html main{ 
+    height: 100%; 
+    width: 100%; 
+}
