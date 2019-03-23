@@ -1,31 +1,102 @@
 <!DOCTYPE html>
 <html lang="DE">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="stylesheet.css">
-    <style href="/TS/script.js"></style>
+    <script src="./TS/script.js"></script>
     <title>UserPage von Iven Otis Sieglen</title>
 </head>
-<body>
-   <header>
-        <p>WILLKOMMEN AUF DER USERPAGE VON IVEN OTIS SIEGLEN</p>
+< <header>
+    <h1>WILLKOMMEN AUF DER USERPAGE VON IVEN OTIS SIEGLEN</h1>
     </header>
+
     <main>
+        <!--Beginn des  Karusells-->
+        <div class="carousel">
+            <div class="carousel-inner">
+                <!--Bild 1-->
+                <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden=""
+                    checked="checked">
+                <div class="carousel-item">
+                    <img src="https://github.com/ivenios/SHAMANICData/blob/master/Jorinna%20.png?raw=true">
+                </div>
+                <!--Bild 2-->
+                <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="https://github.com/ivenios/SHAMANICData/blob/master/Cherryl%20Duncan.png?raw=true">
+                </div>
+                <!--Bild 3-->
+                <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="https://github.com/ivenios/SHAMANICData/blob/master/EchtKathrin.png?raw=true">
+                </div>
+                <!--Bild 4-->
+                <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="https://github.com/ivenios/SHAMANICData/blob/master/Lily.png?raw=true">
+                </div>
+                <!--Bild 5-->
+                <input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="https://github.com/ivenios/SHAMANICData/blob/master/Dany.png?raw=true">
+                </div>
+                <!--Bild 6-->
+                <input class="carousel-open" type="radio" id="carousel-6" name="carousel" aria-hidden="true" hidden="">
+                <div class="carousel-item">
+                    <img src="https://github.com/ivenios/SHAMANICData/blob/master/Türkis.png?raw=true">
+                </div>
+                <!--Bild 7-->
 
-    </main>
-    <footer>
-        <div>
-            <p>Hier finden sie weitere interessante </p>
-            <ul>
-                <li>Instagram</li>
-                <li>Facebook</li>
 
-            </ul>
+                <!--Buttons-->
+                <!--Die Reihenfolge der Labels gibt die Klickreihenfolge der Bilder an. Die Labls müssen immer in einer Rückzählenden Reihenfolge zwei mal hinterinander angeordnet werden. -->
+                <label for="carousel-6" class="carousel-control next control-5">></label>
+                <label for="carousel-5" class="carousel-control prev control-6">
+                    <</label> <label for="carousel-4" class="carousel-control next control-3">>
+                </label>
+                <label for="carousel-3" class="carousel-control prev control-4">
+                    <</label> <label for="carousel-2" class="carousel-control next control-1">>
+                </label>
+                <label for="carousel-1" class="carousel-control prev control-2">
+                    <</label> <label for="carousel-6" class="carousel-control prev control-1">
+                        <</label> <label for="carousel-5" class="carousel-control next control-4">>
+                </label>
+                <label for="carousel-4" class="carousel-control prev control-5">
+                    <</label> <label for="carousel-3" class="carousel-control next control-2">>
+                </label>
+                <label for="carousel-2" class="carousel-control prev control-3">
+                    <</label> <label for="carousel-1" class="carousel-control next control-6">>
+                </label>
+
+                <!--Indikatoren für die Position in dem Karusell, hier kann das Design geändert werden, wenn nötig -->
+                <ol class="carousel-indicators">
+                    <li>
+                        <label for="carousel-1" class="carousel-bullet">.</label>
+                    </li>
+                    <li>
+                        <label for="carousel-2" class="carousel-bullet">.</label>
+                    </li>
+                    <li>
+                        <label for="carousel-3" class="carousel-bullet">.</label>
+                    </li>
+                    <li>
+                        <label for="carousel-4" class="carousel-bullet">.</label>
+                    </li>
+                    <li>
+                        <label for="carousel-5" class="carousel-bullet">.</label>
+                    </li>
+                    <li>
+                        <label for="carousel-6" class="carousel-bullet">.</label>
+                    </li>
+
+                </ol>
+            </div>
         </div>
+        <!--Ende des eingefügten Karusells-->
+    </main>
+    </body>
 
-    /footer>
-
-</body>
 </html>
